@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <label1>1. 납품자명 : </label1><input type="text"><br> 
+            <label1>2. email : </label1><input type="text" placeholder="answer@naver.com"><br> 
+            <label1>3. 홈페이지 : </label1><input type="url"  value="https://"><br> 
+            <label1>4. 지역 :
+            <select name="지역: " size="1" width="300px">
+                <option value="부산">부산</option>
+                <option value="서울">서울</option>
+                <option value="대전">대전</option>
+            </select>    
+            </label1>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>납품 정보</legend>
+            <ul>
+                <li> 상품명 : <input type="text" > </li>
+                <li>납품수량 : <input type="text" placeholder="최소100"></li>
+                <li> <label>납풍등급 : </label>
+                    <input type="range" min="0" max="100" value="50" step="10"><br> </li>
+                <li>기타사항 :
+                    <form action="#">
+                        <textarea name="contents" cols="30" rows="10" style="resize:none ;">
+                        </textarea>
+                </li>
+            </ul>
+           
+        </fieldset>
+        <button>send message</button>
+    </form>
+    <br>
+    <br>
+
+    <form>
+       
+            <label1>1. 고객명 : </label1><input type="text"><br> 
+            <br>
+            <label1>2. 전화번호 : </label1><input type="text"><br> 
+            <br>
+            <label1>3. E-mail : </label1><input type="text"><br> 
+            <br>
+            <label1> 피자선택 : 
+                <select name="피자를 선택하세요" size="1" width="300px">
+                <option value="피자를 선택하세요">피자를 선택하세요</option>
+                <option value="페퍼로니">페퍼로니</option>
+                <option value="콤비네이션">콤비네이션</option>
+                <option value="핫갈릭쉬림프">핫갈릭쉬림프</option>
+            </select>    
+        <fieldset><legend> 피자 사이즈</legend>
+            <ul>
+               
+        <input type="radio" id="Small">
+        <label for="Small">Small</label>
+        <br>
+        <input type="radio" id="Medium">
+        <label for="Medium">Medium</label>
+        <br>
+        <input type="radio" id="Large" >
+        <label for="Large">Large</label>
+        <br>
+            </ul>
+        </fieldset>
+        <fieldset><legend> 토핑 선택</legend>
+            <ul>
+               
+                <input type="radio" id="베이컨"  multiple>
+                <label for="베이컨">베이컨</label>
+                <br>
+                <input type="radio" id="치즈" multiple>
+                <label for="치즈">치즈</label>
+                <br>
+                <input type="radio" id="양파"  multiple>
+                <label for="양파">양파</label>
+                <br>
+                <input type="radio" id="버섯"  multiple>
+                <label for="버섯">버섯</label>
+                    </ul>
+            
+        </fieldset>
+        <form action="#">
+            <label>희망배송시간 : </label>
+            <input type="time" name="time"><br>
+            <br>
+            <lable> 배송시 요청사항
+            <form action="#">
+                <textarea name="contents" cols="30" rows="5" style="resize:none ;">
+                </textarea>
+                <br>
+                <br>
+        <button>주문하기</button>    
+        </form>
+    </form>
+    <br>
+    <br>
+
+    <form>
+        <h1>회원가입</h1>
+        <fieldset>
+            <legend>필수 입력 사항</legend>
+            <label1><h3> ID &nbsp;<input type="text" placeholder="아이디 10글자 이내"> <button> 중복 확인</button></h3></label1>
+            <label1> <h3>비밀번호 </label1><input type="text" size="30" placeholder="영문,숫자,특수문자 포함 8자 이상" ></h3>
+            <label1><h3> 비밀번호 확인 <input type="text" ></h3></label1> 
+            <label1><h3> 직접입력 <input type="text" &nbsp;>
+                <select name= "직접입력" size="1" width="100px">
+                <option value= 직접입력 > &nbsp;직접입력</option>
+                <option value="gmail.com">지메일</option>
+                <option value="naver.com">네이버</option>
+                </label1>
+            </select>    </h3> 
+           
+        </fieldset>
+        <fieldset>
+            <legend>추가 정보</legend>
+            <label1>프로필 사진  <button>파일선택</button> alt="강 사진"선택된 파일 없음<br>
+                <br>
+            <label1>성별 : <input type="radio" id="남자" checked>
+                <label for="남자">남자</label>
+                <input type="radio" id="여자">
+                <label for="여자">여자</label>
+                
+            </select>    </h3> 
+           
+        </fieldset>
+
+
+    </form>
+    
+</body>
+</html>
